@@ -87,6 +87,7 @@ map <leader>ss :setlocal spell!<cr>
 
 " NERDTree
 map <C-\> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 " FZF
 map <C-P> :Files<CR>

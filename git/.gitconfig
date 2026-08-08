@@ -1,0 +1,37 @@
+[user]
+	name = Ahmed Badawi
+	email = ahmedabadawi@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+	excludesFile = ~/.config/git/ignore
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = false
+[merge]
+	conflictstyle = zdiff3
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[fetch]
+	prune = true
+[rebase]
+	autoStash = true
+[color]
+	ui = auto
+[alias]
+	co = checkout
+	br = branch
+	st = status -sb
+	cm = commit -m
+	amend = commit --amend --no-edit
+	unstage = restore --staged
+	please = push --force-with-lease
+	undo = reset --mixed HEAD~1
+	lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %C(green)(%cr) %C(blue)<%an>%Creset' --abbrev-commit

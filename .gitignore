@@ -1,1 +1,5 @@
 temp/
+.DS_Store
+
+# machine-only overrides, not versioned (see zsh/.config/zsh/local.zsh)
+zsh/.config/zsh/local.zsh.private

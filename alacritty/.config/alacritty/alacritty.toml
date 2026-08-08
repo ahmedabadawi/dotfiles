@@ -1,0 +1,66 @@
+# ~/.config/alacritty/alacritty.toml
+# Alacritty was already in use but unconfigured (running on defaults).
+# Same config format works on Linux too.
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding = { x = 10, y = 10 }
+decorations = "buttonless"
+opacity = 1.0
+option_as_alt = "Both"
+
+[scrolling]
+history = 10000
+
+[font]
+size = 13.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+
+# --- Catppuccin Mocha ------------------------------------------------------
+[colors.primary]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+
+[colors.cursor]
+text = "#1e1e2e"
+cursor = "#f5e0dc"
+
+[colors.normal]
+black = "#45475a"
+red = "#f38ba8"
+green = "#a6e3a1"
+yellow = "#f9e2af"
+blue = "#89b4fa"
+magenta = "#f5c2e7"
+cyan = "#94e2d5"
+white = "#bac2de"
+
+[colors.bright]
+black = "#585b70"
+red = "#f38ba8"
+green = "#a6e3a1"
+yellow = "#f9e2af"
+blue = "#89b4fa"
+magenta = "#f5c2e7"
+cyan = "#94e2d5"
+white = "#a6adc8"
+
+# `option_as_alt = "Both"` above already makes Option+Left/Right send the
+# standard xterm word-jump escape sequences that the zsh keybindings
+# expect — no custom keyboard.bindings needed.

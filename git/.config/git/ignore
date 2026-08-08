@@ -1,0 +1,14 @@
+# Global gitignore — patterns that apply across every repo on this machine,
+# not project-specific (those belong in each repo's own .gitignore).
+
+**/.claude/settings.local.json
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+*.swp
+*.swo
+.netrwhist
